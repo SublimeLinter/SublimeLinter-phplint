@@ -4,7 +4,7 @@
 #
 # Written by Aparajita Fishman
 #
-# Project: https://github.com/SublimeLinter/SublimeLinter-contrib-pep8
+# Project: https://github.com/SublimeLinter/SublimeLinter-contrib-phplint
 # License: MIT
 #
 
