@@ -8,14 +8,14 @@
 # License: MIT
 #
 
-"""This module provides the PHPLint plugin class."""
+"""This module exports the PHPLint plugin class."""
 
 from SublimeLinter.lint import Linter
 
 
 class PHPLint(Linter):
 
-    """Provide an interface to the phplint executable."""
+    """Provides an interface to the phplint executable."""
 
     language = ('php', 'html')
     cmd = 'phplint --print-path shortest --print-context --tab-size 4 --no-overall'
