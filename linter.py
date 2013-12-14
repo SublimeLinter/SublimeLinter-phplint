@@ -18,7 +18,7 @@ class PHPLint(Linter):
 
     """Provides an interface to the phplint executable."""
 
-    language = ('php', 'html')
+    syntax = ('php', 'html')
     cmd = 'phplint --print-path shortest --print-context --tab-size 4 --no-overall'
     regex = (
         r'^(?i)(?:'
