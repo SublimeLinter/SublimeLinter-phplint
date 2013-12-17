@@ -1,9 +1,10 @@
 SublimeLinter-phplint
 =========================
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) provides an interface to [phplint](http://www.icosaedro.it/phplint/index.html). It will be used with files that have the “PHP” syntax, or within `<?php ?>` tags in HTML files.
+This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) provides an interface to [phplint](http://www.icosaedro.it/phplint/index.html). It will be used with files that have the “PHP”, “HTML”, or “HTML 5” syntax.
 
 ## Installation
+SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation).
 
 ### Linter installation
 Before installing this plugin, you must ensure that `phplint` is installed on your system. To install `phplint`, download and run the appropriate installer from the [download page](http://www.icosaedro.it/phplint/download.html). On Mac OS X, the best option is to install [Homebrew](http://brew.sh) and then enter the following in a terminal:
@@ -12,7 +13,7 @@ Before installing this plugin, you must ensure that `phplint` is installed on yo
 brew install phplint
 ```
 
-Now you can proceed to install the SublimeLinter-phplint plugin.
+Once phplint is installed, you can proceed to install the SublimeLinter-phplint plugin if it is not yet installed.
 
 ### Plugin installation
 Please use [Package Control](https://sublime.wbond.net/installation) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.

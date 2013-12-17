@@ -1,6 +1,10 @@
 SublimeLinter-phplint
 -------------------------------
-
 This linter plugin for SublimeLinter provides an interface to phplint.
 
-For more information, please see https://github.com/SublimeLinter/SublimeLinter-phplint.
+INSTALLATION
+------------
+Before this plugin will activate, you *must* follow the installation
+instructions here:
+
+https://github.com/SublimeLinter/SublimeLinter-phplint
