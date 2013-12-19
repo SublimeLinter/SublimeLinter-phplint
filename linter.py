@@ -10,7 +10,7 @@
 
 """This module exports the PHPLint plugin class."""
 
-from SublimeLinter.lint import Linter
+from SublimeLinter.lint import Linter, util
 
 
 class PHPLint(Linter):
@@ -28,6 +28,7 @@ class PHPLint(Linter):
         r'(?P<message>[^`\r\n]*(?:`(?P<near>[^\']+)\')?[^\r\n]*)'
     )
     multiline = True
+    error_stream = util.STREAM_BOTH
     tempfile_suffix = 'php'
 
     def split_match(self, match):
