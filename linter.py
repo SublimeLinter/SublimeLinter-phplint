@@ -19,6 +19,9 @@ class PHPLint(Linter):
 
     syntax = ('php', 'html', 'html 5')
     cmd = 'phplint --print-path shortest --print-context --tab-size 4 --no-overall'
+    version_args = '--version'
+    version_re = r'PHPLint (?P<version>\d+\.\d+)'
+    version_requirement = '>= 1.1'
     regex = (
         r'(?i)^(?:'
         r'\t.*?\r?\n'
