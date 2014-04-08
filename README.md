@@ -1,7 +1,7 @@
 SublimeLinter-phplint
 =========================
 
-[![Build Status](https://khancdn.eu/badges.php?service=https%3A%2F%2Ftravis-ci.org%2FSublimeLinter%2FSublimeLinter-phplint.png%3Fbranch%3Dmaster)](https://travis-ci.org/SublimeLinter/SublimeLinter-phplint)
+[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-phplint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-phplint)
 
 This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [phplint](http://www.icosaedro.it/phplint/index.html). It will be used with files that have the “PHP”, “HTML”, or “HTML 5” syntax.
 
