@@ -12,7 +12,7 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 Before installing this plugin, you must ensure that `phplint` is installed on your system. To install `phplint`, download and run the appropriate installer from the [download page](http://www.icosaedro.it/phplint/download.html). On Mac OS X, the best option is to install [Homebrew](http://brew.sh) and then enter the following in a terminal:
 
 ```sh
-brew install phplint
+brew install homebrew/php/phplint
 ```
 
 **Note:** This plugin requires `phplint` 1.1 or later.
