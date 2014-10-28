@@ -15,6 +15,8 @@ Before installing this plugin, you must ensure that `phplint` is installed on yo
 brew install homebrew/php/phplint
 ```
 
+If installation via `brew` fails, see [this page](http://georgemastro.com/gcc-4-8-error-unrecognized-command-line-option-fnested-functions/) for possible solutions.
+
 **Note:** This plugin requires `phplint` 1.1 or later.
 
 ### Linter configuration
