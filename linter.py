@@ -18,7 +18,7 @@ class PHPLint(Linter):
     """Provides an interface to the phplint executable."""
 
     syntax = ('php', 'html')
-    cmd = 'phplint --php-version 5 --print-path relative --print-column-number --tab-size 4 --no-overall'
+    cmd = 'phpl --php-version 5 --print-path relative --print-column-number --tab-size 4 --no-overall'
     version_args = '--version'
     version_re = r'PHPLint (?P<version>\d+\.\d+)'
     version_requirement = '>= 2.0'
