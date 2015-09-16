@@ -18,16 +18,15 @@ class PHPLint(Linter):
     """Provides an interface to the phplint executable."""
 
     syntax = ('php', 'html')
-    cmd = 'phplint --print-path shortest --print-context --tab-size 4 --no-overall'
+    cmd = 'phpl --php-version 5 --print-path relative --print-column-number --tab-size 4 --no-overall'
     version_args = '--version'
     version_re = r'PHPLint (?P<version>\d+\.\d+)'
-    version_requirement = '>= 1.1'
+    version_requirement = '>= 2.0'
     regex = (
         r'(?i)^(?:'
-        r'\t.*?\r?\n'
-        r'\t(?P<col>.*) \\_ HERE\r?\n)?'
-        r'(?P<filename>.+?):(?P<line>\d+): '
-        r'(?:(?P<error>(?:fatal )?error)|(?P<warning>warning|notice)): '
+        r'\t.*?\r?\n)?'
+        r'==== (?P<line>\d+):(?P<col>.*): '
+        r'(?:(?P<error>error)|(?P<warning>warning|notice)): '
         r'(?P<message>[^`\r\n]*(?:`(?P<near>[^\']+)\')?[^\r\n]*)'
     )
     multiline = True

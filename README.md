@@ -17,7 +17,7 @@ brew install homebrew/php/phplint
 
 If installation via `brew` fails, see [this page](http://georgemastro.com/gcc-4-8-error-unrecognized-command-line-option-fnested-functions/) for possible solutions.
 
-**Note:** This plugin requires `phplint` 1.1 or later.
+**Note:** This plugin requires `phplint` 2.0 or later.
 
 ### Linter configuration
 In order for `phplint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
