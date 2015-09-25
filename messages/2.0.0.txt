@@ -1,0 +1,9 @@
+SublimeLinter-phplint 2.0.0
+---------------------
+
+SublimeLinter-phplint now requires atleast phplint version 2.0.
+
+If you are using an earlier version, you will need to upgrade it to
+continue using the newest version of SublimeLinter-phplint.
+
+Sorry for any inconvenience, and thanks for using SublimeLinter!
