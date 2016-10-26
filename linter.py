@@ -41,7 +41,7 @@ class PHPLint(Linter):
             view_settings.get('php_version', 5)
 
         cmd = 'phpl --php-version'
-        cmd += ' ' + php_version 
+        cmd += ' ' + php_version
         cmd += ' --print-path relative --print-column-number --tab-size 4 --no-overall'
 
         return cmd
