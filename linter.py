@@ -19,12 +19,6 @@ class PHPLint(Linter):
 
     syntax = ('php', 'html')
 
-    """Get settings for PHPLinter"""
-    view_settings = get_view_settings(inline=True)
-    php_version = \
-        view_settings.get('php_version', 5)
-
-    cmd = 'phpl --php-version ' + php_version + ' --print-path relative --print-column-number --tab-size 4 --no-overall'
     version_args = '--version'
     version_re = r'PHPLint (?P<version>\d+\.\d+)'
     version_requirement = '>= 2.0'
@@ -37,6 +31,20 @@ class PHPLint(Linter):
     )
     multiline = True
     tempfile_suffix = 'php'
+
+    def cmd(self):
+        """
+        Return the command line to execute.
+        """
+
+        """Get settings for PHPLinter"""
+        view_settings = self.get_view_settings(inline=True)
+        php_version = \
+            view_settings.get('php_version', 5)
+
+        cmd = 'phpl --php-version ' + php_version + ' --print-path relative --print-column-number --tab-size 4 --no-overall'
+
+        return cmd
 
     def split_match(self, match):
         """Return the match with ` quotes transformed to '."""
