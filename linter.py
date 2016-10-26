@@ -33,9 +33,7 @@ class PHPLint(Linter):
     tempfile_suffix = 'php'
 
     def cmd(self):
-        """
-        Return the command line to execute.
-        """
+        """Return the command line to execute."""
 
         """Get settings for PHPLinter"""
         view_settings = self.get_view_settings(inline=True)
