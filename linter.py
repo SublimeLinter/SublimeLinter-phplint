@@ -20,7 +20,7 @@ class PHPLint(Linter):
     syntax = ('php', 'html')
 
     """Get settings for PHPLinter"""
-    view_settings = self.get_view_settings(inline=True)
+    view_settings = get_view_settings(inline=True)
     php_version = \
         view_settings.get('php_version', 5)
 
