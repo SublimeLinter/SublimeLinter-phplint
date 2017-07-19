@@ -36,6 +36,19 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.org/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.org/en/latest/linter_settings.html).
 
+To specify your version of PHP you can set it in your **User** SublimeLinter.sublime-settings file with the following syntax:
+```json
+{
+	"user": {
+        "linters": {
+            "php": {
+                "php-version": 7,
+            }
+        }
+    }
+}
+```
+
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
 
