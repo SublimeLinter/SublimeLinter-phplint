@@ -11,7 +11,7 @@ class PHPLint(Linter):
         r'(?P<message>[^`\r\n]*(?:`(?P<near>[^\']+)\')?[^\r\n]*)'
     )
     multiline = True
-    tempfile_suffix = 'php'
+    tempfile_suffix = '-'
     defaults = {
         'selector': 'source.php, text.html.basic'
     }
