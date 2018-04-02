@@ -1,27 +1,8 @@
-#
-# linter.py
-# Linter for SublimeLinter3, a code checking framework for Sublime Text 3
-#
-# Written by Aparajita Fishman
-# Copyright (c) 2015-2016 The SublimeLinter Community
-# Copyright (c) 2013-2014 Aparajita Fishman
-#
-# License: MIT
-#
-
-"""This module exports the PHPLint plugin class."""
-
 from SublimeLinter.lint import Linter
 
 
 class PHPLint(Linter):
-    """Provides an interface to the phplint executable."""
-
-    syntax = ('php', 'html')
-    cmd = 'phpl --php-version 5 --print-path relative --print-column-number --tab-size 4 --no-overall'
-    version_args = '--version'
-    version_re = r'PHPLint (?P<version>\d+\.\d+)'
-    version_requirement = '>= 2.0'
+    cmd = 'phpl --print-path relative --print-column-number --no-overall ${args} ${file}'
     regex = (
         r'(?i)^(?:'
         r'\t.*?\r?\n)?'
@@ -30,7 +11,10 @@ class PHPLint(Linter):
         r'(?P<message>[^`\r\n]*(?:`(?P<near>[^\']+)\')?[^\r\n]*)'
     )
     multiline = True
-    tempfile_suffix = 'php'
+    tempfile_suffix = '-'
+    defaults = {
+        'selector': 'source.php, text.html.basic'
+    }
 
     def split_match(self, match):
         """Return the match with ` quotes transformed to '."""
