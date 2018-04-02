@@ -2,7 +2,7 @@ from SublimeLinter.lint import Linter
 
 
 class PHPLint(Linter):
-    cmd = 'phpl --print-path relative --print-column-number --tab-size 4 --no-overall ${args}'
+    cmd = 'phpl --print-path relative --print-column-number --no-overall ${args}'
     regex = (
         r'(?i)^(?:'
         r'\t.*?\r?\n)?'
