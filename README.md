@@ -17,7 +17,7 @@ Before installing this plugin, ensure that `phplint` (2.0 or later) is installed
 To install `phplint`, download and run the appropriate installer from the [download page](http://www.icosaedro.it/phplint/download.html). On Mac OS X, the best option is to install [Homebrew](http://brew.sh) and then enter the following in a terminal:
 
 ```sh
-brew install homebrew/php/phplint
+brew install phplint
 ```
 
 If installation via `brew` fails, see [this page](http://georgemastro.com/gcc-4-8-error-unrecognized-command-line-option-fnested-functions/) for possible solutions.
