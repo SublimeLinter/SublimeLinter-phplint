@@ -21,14 +21,14 @@ class PHPLint(Linter):
         match, line, col, error, warning, message, near = super().split_match(match)
 
         if message == 'no PHP code found at all':
-            match = None
-        else:
-            message = message.replace('`', '\'')
+            return None
 
-            # If the message contains a complaint about a function
-            # and near looks like a function reference, remove the trailing
-            # () so it can be found.
-            if 'function \'' in message and near and near.endswith('()'):
-                near = near[:-2]
+        message = message.replace('`', '\'')
+
+        # If the message contains a complaint about a function
+        # and near looks like a function reference, remove the trailing
+        # () so it can be found.
+        if 'function \'' in message and near and near.endswith('()'):
+            near = near[:-2]
 
         return match, line, col, error, warning, message, near
