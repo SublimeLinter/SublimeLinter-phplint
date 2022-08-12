@@ -13,7 +13,7 @@ class PHPLint(Linter):
     multiline = True
     tempfile_suffix = '-'
     defaults = {
-        'selector': 'source.php, text.html.basic'
+        'selector': 'embedding.php, source.php'
     }
 
     def split_match(self, match):
